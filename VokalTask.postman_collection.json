@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "3168465f-36c7-42e4-9c55-2ba4ca0dbec5",
+		"name": "VokalTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/parkingcontroller/getVechicleByDuration?start=2019-02-02&end=2019-02-04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/getVechicleByDuration?start=2019-02-02&end=2019-02-04",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"getVechicleByDuration"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2019-02-02"
+						},
+						{
+							"key": "end",
+							"value": "2019-02-04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingcontroller/parkVechicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n    \"vechicleNumber\": \"ABC123\",\n    \"color\": \"Black\",\n    \"level\": 1,\n    \"sizeOfCar\": \"small\",\n    \"status\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/parkVechicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"parkVechicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingcontroller/unpark?vechicleNumber=ABC123",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/unpark?vechicleNumber=ABC123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"unpark"
+					],
+					"query": [
+						{
+							"key": "vechicleNumber",
+							"value": "ABC123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingcontroller/getVechicleByVechicleNumber?vechicleNumber=ABC124",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/getVechicleByVechicleNumber?vechicleNumber=ABC124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"getVechicleByVechicleNumber"
+					],
+					"query": [
+						{
+							"key": "vechicleNumber",
+							"value": "ABC124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingcontroller/getVechiclesByColor?color=Black",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/getVechiclesByColor?color=Black",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"getVechiclesByColor"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "Black"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/parkingcontroller/getVechiclesByType?type=small",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parkingcontroller/getVechiclesByType?type=small",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parkingcontroller",
+						"getVechiclesByType"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "small"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
