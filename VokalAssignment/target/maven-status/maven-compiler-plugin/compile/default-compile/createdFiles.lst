@@ -1,0 +1,5 @@
+com/amrita/task/VokalAssignmentApplication.class
+com/amrita/task/repository/ParkingRepository.class
+com/amrita/task/controller/ParkingController.class
+com/amrita/task/service/ParkingService.class
+com/amrita/task/entity/Parking.class
