@@ -16,6 +16,16 @@ public class ParkingController {
 
     @Autowired ParkingService parkingService;
 
+    @RequestMapping(value = "/getall", method = RequestMethod.GET)
+    public List<Parking> getAll() {
+        return parkingService.getAll();
+    }
+
+    @RequestMapping(value = "/check", method = RequestMethod.GET)
+    public String getHello() {
+        return "hello World";
+    }
+
     @RequestMapping(value = "/parkVechicle", method = RequestMethod.POST, consumes = "application/json")
     public Map<String, Object> parkVechicle(@RequestBody Parking vechicle) {
         return parkingService.parkVechicle(vechicle);

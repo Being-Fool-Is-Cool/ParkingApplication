@@ -2,6 +2,7 @@ package com.amrita.task.service;
 
 import com.amrita.task.entity.Parking;
 import com.amrita.task.repository.ParkingRepository;
+import com.amrita.task.repository.SampleRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,13 @@ import java.util.*;
 public class ParkingService {
 
     @Autowired ParkingRepository parkingRepository;
+
+    @Autowired
+    SampleRepo sampleRepo;
+
+    public List<Parking> getAll() {
+        return (List<Parking>) sampleRepo.findAll();
+    }
 
     public List<Parking> getAllBookedLevel() {
         List<Parking> response = new ArrayList<>();
